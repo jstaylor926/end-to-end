@@ -9,13 +9,15 @@ import Home from '.';
 
 export default function Routes() {
     return (
-        <Switch>
-            <Route path='/' component={Home} />
-            <Route path='/projects/projects' component={ProjectHome} />
-            <Route path='/projects/timeLogger' component={TimeLogger} />
-            <Route path='/projects/trello' component={Trello} />
-            <Route path='/about/personal' component={Personal} />
-            <Route path='/about/professional' component={Professional} />
-        </Switch>
+<>
+    <Switch>
+        <Route path='/' component={Home} />
+        <Route path='/projects/projects' component={ProjectHome} />
+        <Route path='/projects/timeLogger' component={TimeLogger} />
+        <Route path='/projects/trello' component={Trello} />
+        <Route path='/about/personal' component={Personal} />
+        <Route path='/about/professional' component={Professional} />
+    </Switch>
+</>
     )
 }
